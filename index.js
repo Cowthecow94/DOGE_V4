@@ -23,7 +23,7 @@ const routes = [
   { route: '/lessons', file: './static/agloader.html' },
   { route: '/info', file: './static/info.html' },
   { route: '/mycourses', file: './static/loading.html' },
-  { route: '/about', file: './static/links.txt' }
+  { route: '/about', file: './static/links.html' }
 ];
 
 app.use(express.json());
