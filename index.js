@@ -22,7 +22,8 @@ const routes = [
   { route: '/gms', file: './static/gms.html' },
   { route: '/lessons', file: './static/agloader.html' },
   { route: '/info', file: './static/info.html' },
-  { route: '/mycourses', file: './static/loading.html' }
+  { route: '/mycourses', file: './static/loading.html' },
+  { route: '/about', file: './static/links.txt' }
 ];
 
 app.use(express.json());
