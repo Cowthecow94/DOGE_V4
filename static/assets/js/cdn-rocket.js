@@ -19,7 +19,9 @@ if (blankerCheck !== "nuh uh") {
   if (!inFrame && !navigator.userAgent.includes("Firefox")) {
     const popup = open("about:blank", "_blank");
     if (!popup || popup.closed) {
-      alert("Please allow popups and redirects for about:blank cloak to work (this is now enabled by default).");
+      while (!popup || popup.closed) {
+        alert("Please allow popups and redirects for about:blank cloak to work (this is now enabled by default).");
+      }
     } else {
       popup.document.title = "My Drive - Google Drive";
       const link = popup.document.createElement("link");
@@ -34,7 +36,7 @@ if (blankerCheck !== "nuh uh") {
       iframe.style.border = iframe.style.outline = "none";
       iframe.src = location.href;
       popup.document.body.appendChild(iframe);
-      location.replace("https://www.google.com");
+      location.replace("https://classroom.google.com/h");
     }
   }
 }
