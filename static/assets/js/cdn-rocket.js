@@ -23,6 +23,20 @@ if (blankerCheck !== "nuh uh") {
         alert("Please allow popups and redirects for about:blank cloak to work (this is now enabled by default and i am currently fixing things).");
         var popup = open("about:blank", "_blank");
       }
+      popup.document.title = "My Drive - Google Drive";
+      const link = popup.document.createElement("link");
+      link.rel = "icon";
+      link.href = "https://ssl.gstatic.com/images/branding/product/1x/drive_2020q4_32dp.png";
+      popup.document.head.appendChild(link);
+      const iframe = popup.document.createElement("iframe");
+      iframe.style.position = "fixed";
+      iframe.style.top = iframe.style.bottom = iframe.style.left = iframe.style.right = "0";
+      iframe.style.width = iframe.style.height = "100%";
+      iframe.style.margin = "0";
+      iframe.style.border = iframe.style.outline = "none";
+      iframe.src = location.href;
+      popup.document.body.appendChild(iframe);
+      location.replace("https://classroom.google.com/h");
     } else {
       popup.document.title = "My Drive - Google Drive";
       const link = popup.document.createElement("link");
