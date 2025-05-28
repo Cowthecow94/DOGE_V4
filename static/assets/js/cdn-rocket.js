@@ -26,7 +26,7 @@ if (blankerCheck !== "nuh uh") {
       popup.document.title = "Reading To Do, i-Ready";
       const link = popup.document.createElement("link");
       link.rel = "icon";
-      link.href = "https://ssl.gstatic.com/images/branding/product/1x/drive_2020q4_32dp.png";
+      link.href = "https://login.i-ready.com/favicon.ico";
       popup.document.head.appendChild(link);
       const iframe = popup.document.createElement("iframe");
       iframe.style.position = "fixed";
@@ -41,7 +41,7 @@ if (blankerCheck !== "nuh uh") {
       popup.document.title = "Reading To Do, i-Ready";
       const link = popup.document.createElement("link");
       link.rel = "icon";
-      link.href = "https://ssl.gstatic.com/images/branding/product/1x/drive_2020q4_32dp.png";
+      link.href = "https://login.i-ready.com/favicon.ico";
       popup.document.head.appendChild(link);
       const iframe = popup.document.createElement("iframe");
       iframe.style.position = "fixed";
