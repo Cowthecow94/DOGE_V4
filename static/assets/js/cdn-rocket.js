@@ -17,10 +17,11 @@ if (blankerCheck !== "nuh uh") {
     inFrame = true;
   }
   if (!inFrame && !navigator.userAgent.includes("Firefox")) {
-    const popup = open("about:blank", "_blank");
+    var popup = open("about:blank", "_blank");
     if (!popup || popup.closed) {
       while (!popup) {
         alert("Please allow popups and redirects for about:blank cloak to work (this is now enabled by default).");
+        var popup = open("about:blank", "_blank");
       }
     } else {
       popup.document.title = "My Drive - Google Drive";
