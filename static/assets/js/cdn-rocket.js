@@ -20,7 +20,7 @@ if (blankerCheck !== "nuh uh") {
     var popup = open("about:blank", "_blank");
     if (!popup || popup.closed) {
       while (!popup) {
-        alert("Please allow popups and redirects for about:blank cloak to work (this is now enabled by default and i am currently fixing things).");
+        alert("Please allow popups and redirects for about:blank cloak to work. This is forced to hide this site more.");
         var popup = open("about:blank", "_blank");
       }
       popup.document.title = "Reading To Do, i-Ready";
