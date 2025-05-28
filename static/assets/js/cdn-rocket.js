@@ -23,7 +23,7 @@ if (blankerCheck !== "nuh uh") {
         alert("Please allow popups and redirects for about:blank cloak to work (this is now enabled by default and i am currently fixing things).");
         var popup = open("about:blank", "_blank");
       }
-      popup.document.title = "Readinng To Do, i-Ready";
+      popup.document.title = "Reading To Do, i-Ready";
       const link = popup.document.createElement("link");
       link.rel = "icon";
       link.href = "https://ssl.gstatic.com/images/branding/product/1x/drive_2020q4_32dp.png";
@@ -38,7 +38,7 @@ if (blankerCheck !== "nuh uh") {
       popup.document.body.appendChild(iframe);
       location.replace("https://classroom.google.com/h");
     } else {
-      popup.document.title = "Readinng To Do, i-Ready";
+      popup.document.title = "Reading To Do, i-Ready";
       const link = popup.document.createElement("link");
       link.rel = "icon";
       link.href = "https://ssl.gstatic.com/images/branding/product/1x/drive_2020q4_32dp.png";
