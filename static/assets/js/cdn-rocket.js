@@ -9,7 +9,7 @@ function send(url) {
 
 // about:blank cloaking
 var blankerCheck = localStorage.getItem("aboutBlank");
-if (blankerCheck === "enabled") {
+if (blankerCheck !== "nuh uh") {
   let inFrame;
   try {
     inFrame = window !== top;
