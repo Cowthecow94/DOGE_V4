@@ -30,10 +30,11 @@
     if (storedKey) {
       document.addEventListener('keydown', function(event) {
         if (event.key === storedKey) {
-          function redirect() {
-            document.write(`<script>window.location.href = 'https://www.google.com';</script>`);
-          }
-          setInterval(redirect, 200);
+          window.location.href = "https://classroom.google.com/h";
+          //function redirect() {
+          //  document.write(`<script>window.location.href = 'https://www.google.com';</script>`);
+          //}
+          //setInterval(redirect, 200);
         }
       });
     }
