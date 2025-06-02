@@ -30,7 +30,8 @@
     if (storedKey) {
       document.addEventListener('keydown', function(event) {
         if (event.key === storedKey) {
-          window.location.href = "https://classroom.google.com/h";
+          window.open("https://login.i-ready.com/student/dashboard/home");
+          window.close();
           //function redirect() {
           //  document.write(`<script>window.location.href = 'https://www.google.com';</script>`);
           //}
